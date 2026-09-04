@@ -1,5 +1,6 @@
 {
   "zh_CN": {
+    "E-ink mode": "墨水屏优化",
     "Home": "主页",
     "Favorites": "收藏",
     "Explore": "发现",
@@ -442,6 +443,7 @@
     "Mouse scroll speed": "鼠标滚动速度"
   },
   "zh_TW": {
+    "E-ink mode": "墨水屏優化",
     "Home": "首頁",
     "Favorites": "收藏",
     "Explore": "探索",

@@ -856,6 +856,8 @@ class _ContinuousModeState extends State<_ContinuousMode>
           ? const NeverScrollableScrollPhysics()
           : isZoomedIn
           ? const ClampingScrollPhysics()
+          : appdata.settings['eInkMode'] == true
+          ? const EInkNoInertiaBouncingScrollPhysics()
           : const BouncingScrollPhysics(),
       itemBuilder: (context, index) {
         if (index == 0 || index == reader.maxPage + 1) {

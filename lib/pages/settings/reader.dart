@@ -161,6 +161,14 @@ class _ReaderSettingsState extends State<ReaderSettings> {
               Divider().toSliver(),
             ],
           ),
+        if (comicId == null)
+          _SwitchSetting(
+            title: "E-ink mode".tl,
+            settingKey: "eInkMode",
+            onChanged: () {
+              App.forceRebuild();
+            },
+          ).toSliver(),
         _SwitchSetting(
           title: "Tap to turn Pages".tl,
           settingKey: "enableTapToTurnPages",

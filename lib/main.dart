@@ -201,6 +201,9 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
       return MaterialApp(
         title: "venera",
         home: home,
+        scrollBehavior: appdata.settings['eInkMode'] == true
+            ? const EInkScrollBehavior()
+            : const MaterialScrollBehavior(),
         debugShowCheckedModeBanner: false,
         theme: getTheme(primary, secondary, tertiary, Brightness.light),
         navigatorKey: App.rootNavigatorKey,

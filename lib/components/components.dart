@@ -51,3 +51,4 @@ part 'comic.dart';
 part 'effects.dart';
 part 'gesture.dart';
 part 'code.dart';
+part 'eink_scroll_physics.dart';
