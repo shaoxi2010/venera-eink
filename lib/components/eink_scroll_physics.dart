@@ -12,7 +12,7 @@ class EInkNoInertiaScrollPhysics extends ClampingScrollPhysics {
 
   @override
   Simulation? createBallisticSimulation(
-      ScrollPosition position, double velocity) {
+      ScrollMetrics position, double velocity) {
     if (position.outOfRange) {
       return super.createBallisticSimulation(position, velocity);
     }
@@ -29,7 +29,7 @@ class EInkNoInertiaBouncingScrollPhysics extends BouncingScrollPhysics {
 
   @override
   Simulation? createBallisticSimulation(
-      ScrollPosition position, double velocity) {
+      ScrollMetrics position, double velocity) {
     // Keep edge spring-back: chapter change detection relies on overscroll.
     if (position.outOfRange) {
       return super.createBallisticSimulation(position, velocity);
